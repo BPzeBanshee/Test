@@ -9,9 +9,15 @@ Etc.
 *Argh*
 ```gml
 // gml syntax test
-global.yolo=1;
-if global.yolo>1
+yee = function(){
+show_message("Yee!");
+}
+
+global.yolo = 1;
+var swag = global.yolo;
+if swag > 1
   {
-  instance_create(x,y,obj_en_parent);
+  instance_create_depth(x,y,depth,obj_test);
+  yee();
   }
 ```
